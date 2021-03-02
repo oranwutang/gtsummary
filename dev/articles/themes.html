@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{gtsummary} themes • gtsummary</title>
+<title>gtsummary themes • gtsummary</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -19,7 +19,7 @@
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><!-- docsearch --><script src="../docsearch.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous">
 <link href="../docsearch.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script><meta property="og:title" content="{gtsummary} themes">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script><meta property="og:title" content="gtsummary themes">
 <meta property="og:description" content="gtsummary">
 <meta property="og:image" content="http://www.danieldsjoberg.com/gtsummary/logo.png">
 <meta name="robots" content="noindex">
@@ -47,7 +47,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">gtsummary</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="In-development version">1.3.0.9019</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="In-development version">1.3.7.9000</span>
       </span>
     </div>
 
@@ -55,7 +55,7 @@
       <ul class="nav navbar-nav">
 <li>
   <a href="../index.html">
-    <span class="fa fa-home"></span>
+    <span class="fas fa-home"></span>
      
   </a>
 </li>
@@ -96,7 +96,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="https://github.com/ddsjoberg/gtsummary">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fas fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -116,10 +116,10 @@
 
       
 
-      </header><div class="row">
+      </header><script src="themes_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>{gtsummary} themes</h1>
+      <h1 data-toc-skip>gtsummary themes</h1>
             
       
       <small class="dont-index">Source: <a href="https://github.com/ddsjoberg/gtsummary/blob/master/vignettes/themes.Rmd"><code>vignettes/themes.Rmd</code></a></small>
@@ -129,33 +129,42 @@
 
     
     
-<p>It’s possible to set themes it gtsummary. The themes control many aspects of how a table is printed. Function defaults can be controlled with themes, as well as other aspects that are not modifiable with function arguments.</p>
-<p>The {gtsummary} comes with a few themes, and we welcome user-contributed themes as well! Our focus is tables that are ready for publication and encourage themes that assist in that process; for example, the <code><a href="../reference/theme_gtsummary.html">theme_gtsummary_journal(journal = "jama")</a></code> theme sets defaults that align with the published guidelines from the <em>Journal of the American Medical Association</em>—<em>JAMA</em>. The defaults in {gtsummary} were written to align with the reporting guidelines for <em>European Urology</em>, <em>The Journal of Urology</em>, <em>Urology</em>, and the <em>British Journal of Urology International</em>.</p>
+<p>It’s possible to set themes in {gtsummary}. The themes control many aspects of how a table is printed. Function defaults can be controlled with themes, as well as other aspects that are not modifiable with function arguments.</p>
+<p>The {gtsummary} package comes with a few themes, and we welcome user-contributed themes as well! Our focus is tables that are ready for publication and encourage themes that assist in that process; for example, the <code><a href="../reference/theme_gtsummary.html">theme_gtsummary_journal(journal = "jama")</a></code> theme sets defaults that align with the <a href="https://jamanetwork.com/journals/jama/pages/instructions-for-authors#SecTables">published guidelines</a> from the <em>Journal of the American Medical Association</em>—<em>JAMA</em>. The defaults in {gtsummary} were written to align with the reporting guidelines for <em>European Urology</em>, <em>The Journal of Urology</em>, <em>Urology</em>, and the <em>British Journal of Urology International</em>.</p>
 <div id="setting-themes" class="section level2">
 <h2 class="hasAnchor">
 <a href="#setting-themes" class="anchor"></a>Setting Themes</h2>
-<p>To set a theme, use the <code><a href="../reference/set_gtsummary_theme.html">set_gtsummary_theme()</a></code> function. Themes must be set before you create the {gtsummary} tables. Let’s take a look at the default table, comparing data between treatment groups.</p>
+<p>To set a pre-defined theme, simply include the theme function in a script or the R console.</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/theme_gtsummary.html">theme_gtsummary_journal</a></span><span class="op">(</span>journal <span class="op">=</span> <span class="st">"jama"</span><span class="op">)</span></code></pre></div>
+<p>Use the <code><a href="../reference/set_gtsummary_theme.html">set_gtsummary_theme()</a></code> function to set user-defined themes (more on that below).</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/set_gtsummary_theme.html">set_gtsummary_theme</a></span><span class="op">(</span><span class="va">my_custom_theme</span><span class="op">)</span></code></pre></div>
+<p>Themes must be set before you create the {gtsummary} tables. Let’s take a look at the default table, comparing data between treatment groups.</p>
 <div id="default-theme" class="section level4">
 <h4 class="hasAnchor">
 <a href="#default-theme" class="anchor"></a>Default Theme</h4>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">gtsummary</span>); <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">gt</span>); <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dplyr</span>)
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ddsjoberg/gtsummary">gtsummary</a></span><span class="op">)</span>; <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/rstudio/gt">gt</a></span><span class="op">)</span>; <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>
 
-<span class="no">trial</span> <span class="kw">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span>(<span class="no">trt</span>, <span class="no">age</span>, <span class="no">grade</span>) <span class="kw">%&gt;%</span>
-  <span class="fu"><a href="../reference/tbl_summary.html">tbl_summary</a></span>(<span class="kw">by</span> <span class="kw">=</span> <span class="no">trt</span>) <span class="kw">%&gt;%</span>
-  <span class="fu"><a href="../reference/add_p.html">add_p</a></span>() <span class="kw">%&gt;%</span>
-  <span class="fu"><a href="../reference/add_stat_label.html">add_stat_label</a></span>()</pre></body></html></div>
+<span class="va">trial</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">trt</span>, <span class="va">age</span>, <span class="va">grade</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="../reference/tbl_summary.html">tbl_summary</a></span><span class="op">(</span>by <span class="op">=</span> <span class="va">trt</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="../reference/add_p.html">add_p</a></span><span class="op">(</span><span class="op">)</span> 
+<span class="co">#&gt; Warning: The `.dots` argument of `group_by()` is deprecated as of dplyr 1.0.0.</span></code></pre></div>
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#xcjxuyeraz .gt_table {
+#bqamftqads .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
   font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
   background-color: #FFFFFF;
   width: auto;
   border-top-style: solid;
@@ -172,7 +181,7 @@
   border-left-color: #D3D3D3;
 }
 
-#xcjxuyeraz .gt_heading {
+#bqamftqads .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -184,7 +193,7 @@
   border-right-color: #D3D3D3;
 }
 
-#xcjxuyeraz .gt_title {
+#bqamftqads .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -194,7 +203,7 @@
   border-bottom-width: 0;
 }
 
-#xcjxuyeraz .gt_subtitle {
+#bqamftqads .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -204,13 +213,13 @@
   border-top-width: 0;
 }
 
-#xcjxuyeraz .gt_bottom_border {
+#bqamftqads .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xcjxuyeraz .gt_col_headings {
+#bqamftqads .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -225,7 +234,7 @@
   border-right-color: #D3D3D3;
 }
 
-#xcjxuyeraz .gt_col_heading {
+#bqamftqads .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -245,7 +254,7 @@
   overflow-x: hidden;
 }
 
-#xcjxuyeraz .gt_column_spanner_outer {
+#bqamftqads .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -257,15 +266,15 @@
   padding-right: 4px;
 }
 
-#xcjxuyeraz .gt_column_spanner_outer:first-child {
+#bqamftqads .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xcjxuyeraz .gt_column_spanner_outer:last-child {
+#bqamftqads .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xcjxuyeraz .gt_column_spanner {
+#bqamftqads .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -277,7 +286,7 @@
   width: 100%;
 }
 
-#xcjxuyeraz .gt_group_heading {
+#bqamftqads .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -299,7 +308,7 @@
   vertical-align: middle;
 }
 
-#xcjxuyeraz .gt_empty_group_heading {
+#bqamftqads .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -314,19 +323,15 @@
   vertical-align: middle;
 }
 
-#xcjxuyeraz .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#xcjxuyeraz .gt_from_md > :first-child {
+#bqamftqads .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xcjxuyeraz .gt_from_md > :last-child {
+#bqamftqads .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xcjxuyeraz .gt_row {
+#bqamftqads .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -345,7 +350,7 @@
   overflow-x: hidden;
 }
 
-#xcjxuyeraz .gt_stub {
+#bqamftqads .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -357,7 +362,7 @@
   padding-left: 12px;
 }
 
-#xcjxuyeraz .gt_summary_row {
+#bqamftqads .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +372,7 @@
   padding-right: 5px;
 }
 
-#xcjxuyeraz .gt_first_summary_row {
+#bqamftqads .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,7 +382,7 @@
   border-top-color: #D3D3D3;
 }
 
-#xcjxuyeraz .gt_grand_summary_row {
+#bqamftqads .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -387,7 +392,7 @@
   padding-right: 5px;
 }
 
-#xcjxuyeraz .gt_first_grand_summary_row {
+#bqamftqads .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -397,7 +402,11 @@
   border-top-color: #D3D3D3;
 }
 
-#xcjxuyeraz .gt_table_body {
+#bqamftqads .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#bqamftqads .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -406,7 +415,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#xcjxuyeraz .gt_footnotes {
+#bqamftqads .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -420,13 +429,13 @@
   border-right-color: #D3D3D3;
 }
 
-#xcjxuyeraz .gt_footnote {
+#bqamftqads .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#xcjxuyeraz .gt_sourcenotes {
+#bqamftqads .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -440,62 +449,64 @@
   border-right-color: #D3D3D3;
 }
 
-#xcjxuyeraz .gt_sourcenote {
+#bqamftqads .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#xcjxuyeraz .gt_left {
+#bqamftqads .gt_left {
   text-align: left;
 }
 
-#xcjxuyeraz .gt_center {
+#bqamftqads .gt_center {
   text-align: center;
 }
 
-#xcjxuyeraz .gt_right {
+#bqamftqads .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xcjxuyeraz .gt_font_normal {
+#bqamftqads .gt_font_normal {
   font-weight: normal;
 }
 
-#xcjxuyeraz .gt_font_bold {
+#bqamftqads .gt_font_bold {
   font-weight: bold;
 }
 
-#xcjxuyeraz .gt_font_italic {
+#bqamftqads .gt_font_italic {
   font-style: italic;
 }
 
-#xcjxuyeraz .gt_super {
+#bqamftqads .gt_super {
   font-size: 65%;
 }
 
-#xcjxuyeraz .gt_footnote_marks {
+#bqamftqads .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="xcjxuyeraz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
+<div id="bqamftqads" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
 <thead class="gt_col_headings"><tr>
 <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><strong>Characteristic</strong></th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
-<strong>Drug A</strong>, N = 98</th>
+<strong>Drug A</strong>, N = 98<sup class="gt_footnote_marks">1</sup>
+</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
-<strong>Drug B</strong>, N = 102</th>
+<strong>Drug B</strong>, N = 102<sup class="gt_footnote_marks">1</sup>
+</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
-<strong>p-value</strong><sup class="gt_footnote_marks">1</sup>
+<strong>p-value</strong><sup class="gt_footnote_marks">2</sup>
 </th>
     </tr></thead>
 <tbody class="gt_table_body">
 <tr>
-<td class="gt_row gt_left">Age, yrs, median (IQR)</td>
+<td class="gt_row gt_left">Age</td>
       <td class="gt_row gt_center">46 (37, 59)</td>
       <td class="gt_row gt_center">48 (39, 56)</td>
-      <td class="gt_row gt_center">&lt;0.001</td>
+      <td class="gt_row gt_center">0.7</td>
     </tr>
 <tr>
 <td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Unknown</td>
@@ -504,7 +515,7 @@
       <td class="gt_row gt_center"></td>
     </tr>
 <tr>
-<td class="gt_row gt_left">Grade, n (%)</td>
+<td class="gt_row gt_left">Grade</td>
       <td class="gt_row gt_center"></td>
       <td class="gt_row gt_center"></td>
       <td class="gt_row gt_center">0.9</td>
@@ -534,7 +545,13 @@
           <sup class="gt_footnote_marks"><em>1</em>
           </sup>
            
-          Statistical tests performed: Wilcoxon rank-sum test; chi-square test of independence
+          Median (IQR); n (%)
+          <br></p>
+        <p class="gt_footnote">
+          <sup class="gt_footnote_marks"><em>2</em>
+          </sup>
+           
+          Wilcoxon rank sum test; Pearson's Chi-squared test
           <br></p>
       </td>
     </tr></tfoot>
@@ -544,19 +561,22 @@
 <h4 class="hasAnchor">
 <a href="#jama-theme" class="anchor"></a>JAMA Theme</h4>
 <p>Now, the same code with the JAMA theme.</p>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="fu"><a href="../reference/set_gtsummary_theme.html">set_gtsummary_theme</a></span>(<span class="fu"><a href="../reference/theme_gtsummary.html">theme_gtsummary_journal</a></span>(<span class="kw">journal</span> <span class="kw">=</span> <span class="st">"jama"</span>))
-<span class="co">#&gt; Setting `JAMA` theme</span></pre></body></html></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/theme_gtsummary.html">theme_gtsummary_journal</a></span><span class="op">(</span>journal <span class="op">=</span> <span class="st">"jama"</span><span class="op">)</span>
+<span class="co">#&gt; Setting `JAMA` theme</span></code></pre></div>
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#nutyhhefhn .gt_table {
+#geocahrsba .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
   font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
   background-color: #FFFFFF;
   width: auto;
   border-top-style: solid;
@@ -573,7 +593,7 @@
   border-left-color: #D3D3D3;
 }
 
-#nutyhhefhn .gt_heading {
+#geocahrsba .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -585,7 +605,7 @@
   border-right-color: #D3D3D3;
 }
 
-#nutyhhefhn .gt_title {
+#geocahrsba .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -595,7 +615,7 @@
   border-bottom-width: 0;
 }
 
-#nutyhhefhn .gt_subtitle {
+#geocahrsba .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -605,13 +625,13 @@
   border-top-width: 0;
 }
 
-#nutyhhefhn .gt_bottom_border {
+#geocahrsba .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#nutyhhefhn .gt_col_headings {
+#geocahrsba .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -626,7 +646,7 @@
   border-right-color: #D3D3D3;
 }
 
-#nutyhhefhn .gt_col_heading {
+#geocahrsba .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -646,7 +666,7 @@
   overflow-x: hidden;
 }
 
-#nutyhhefhn .gt_column_spanner_outer {
+#geocahrsba .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -658,15 +678,15 @@
   padding-right: 4px;
 }
 
-#nutyhhefhn .gt_column_spanner_outer:first-child {
+#geocahrsba .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#nutyhhefhn .gt_column_spanner_outer:last-child {
+#geocahrsba .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#nutyhhefhn .gt_column_spanner {
+#geocahrsba .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -678,7 +698,7 @@
   width: 100%;
 }
 
-#nutyhhefhn .gt_group_heading {
+#geocahrsba .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -700,7 +720,7 @@
   vertical-align: middle;
 }
 
-#nutyhhefhn .gt_empty_group_heading {
+#geocahrsba .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -715,19 +735,15 @@
   vertical-align: middle;
 }
 
-#nutyhhefhn .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#nutyhhefhn .gt_from_md > :first-child {
+#geocahrsba .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nutyhhefhn .gt_from_md > :last-child {
+#geocahrsba .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nutyhhefhn .gt_row {
+#geocahrsba .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -746,7 +762,7 @@
   overflow-x: hidden;
 }
 
-#nutyhhefhn .gt_stub {
+#geocahrsba .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -758,7 +774,7 @@
   padding-left: 12px;
 }
 
-#nutyhhefhn .gt_summary_row {
+#geocahrsba .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -768,7 +784,7 @@
   padding-right: 5px;
 }
 
-#nutyhhefhn .gt_first_summary_row {
+#geocahrsba .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -778,7 +794,7 @@
   border-top-color: #D3D3D3;
 }
 
-#nutyhhefhn .gt_grand_summary_row {
+#geocahrsba .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -788,7 +804,7 @@
   padding-right: 5px;
 }
 
-#nutyhhefhn .gt_first_grand_summary_row {
+#geocahrsba .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -798,7 +814,11 @@
   border-top-color: #D3D3D3;
 }
 
-#nutyhhefhn .gt_table_body {
+#geocahrsba .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#geocahrsba .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -807,7 +827,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#nutyhhefhn .gt_footnotes {
+#geocahrsba .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -821,13 +841,13 @@
   border-right-color: #D3D3D3;
 }
 
-#nutyhhefhn .gt_footnote {
+#geocahrsba .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#nutyhhefhn .gt_sourcenotes {
+#geocahrsba .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -841,62 +861,64 @@
   border-right-color: #D3D3D3;
 }
 
-#nutyhhefhn .gt_sourcenote {
+#geocahrsba .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#nutyhhefhn .gt_left {
+#geocahrsba .gt_left {
   text-align: left;
 }
 
-#nutyhhefhn .gt_center {
+#geocahrsba .gt_center {
   text-align: center;
 }
 
-#nutyhhefhn .gt_right {
+#geocahrsba .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nutyhhefhn .gt_font_normal {
+#geocahrsba .gt_font_normal {
   font-weight: normal;
 }
 
-#nutyhhefhn .gt_font_bold {
+#geocahrsba .gt_font_bold {
   font-weight: bold;
 }
 
-#nutyhhefhn .gt_font_italic {
+#geocahrsba .gt_font_italic {
   font-style: italic;
 }
 
-#nutyhhefhn .gt_super {
+#geocahrsba .gt_super {
   font-size: 65%;
 }
 
-#nutyhhefhn .gt_footnote_marks {
+#geocahrsba .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="nutyhhefhn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
+<div id="geocahrsba" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
 <thead class="gt_col_headings"><tr>
 <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><strong>Characteristic</strong></th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
-<strong>Drug A</strong>, N = 98</th>
+<strong>Drug A</strong>, N = 98<sup class="gt_footnote_marks">1</sup>
+</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
-<strong>Drug B</strong>, N = 102</th>
+<strong>Drug B</strong>, N = 102<sup class="gt_footnote_marks">1</sup>
+</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
-<strong>p-value</strong><sup class="gt_footnote_marks">1</sup>
+<strong>p-value</strong><sup class="gt_footnote_marks">2</sup>
 </th>
     </tr></thead>
 <tbody class="gt_table_body">
 <tr>
-<td class="gt_row gt_left">Age, yrs, median (IQR)</td>
-      <td class="gt_row gt_center">46 (37 - 59)</td>
-      <td class="gt_row gt_center">48 (39 - 56)</td>
-      <td class="gt_row gt_center">&lt;0.001</td>
+<td class="gt_row gt_left">Age</td>
+      <td class="gt_row gt_center">46 (37 – 59)</td>
+      <td class="gt_row gt_center">48 (39 – 56)</td>
+      <td class="gt_row gt_center">0.72</td>
     </tr>
 <tr>
 <td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Unknown</td>
@@ -905,7 +927,7 @@
       <td class="gt_row gt_center"></td>
     </tr>
 <tr>
-<td class="gt_row gt_left">Grade, n (%)</td>
+<td class="gt_row gt_left">Grade</td>
       <td class="gt_row gt_center"></td>
       <td class="gt_row gt_center"></td>
       <td class="gt_row gt_center">0.87</td>
@@ -935,7 +957,13 @@
           <sup class="gt_footnote_marks"><em>1</em>
           </sup>
            
-          Statistical tests performed: Wilcoxon rank-sum test; chi-square test of independence
+          Median (IQR); n (%)
+          <br></p>
+        <p class="gt_footnote">
+          <sup class="gt_footnote_marks"><em>2</em>
+          </sup>
+           
+          Wilcoxon rank sum test; Pearson's Chi-squared test
           <br></p>
       </td>
     </tr></tfoot>
@@ -945,22 +973,25 @@
 <div id="jama-compact-theme" class="section level4">
 <h4 class="hasAnchor">
 <a href="#jama-compact-theme" class="anchor"></a>JAMA + Compact Theme</h4>
-<p>Themes can be stacked as well. In the example below, the JAMA theme and the compact theme (reduces font size and cell padding) are stacked.</p>
-<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="fu"><a href="../reference/set_gtsummary_theme.html">set_gtsummary_theme</a></span>(<span class="fu"><a href="../reference/theme_gtsummary.html">theme_gtsummary_journal</a></span>(<span class="kw">journal</span> <span class="kw">=</span> <span class="st">"jama"</span>))
+<p>Themes can be stacked as well. In the example below, the JAMA theme and the compact theme (reduces font size and cell padding) are both called and both themes are utilized.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/theme_gtsummary.html">theme_gtsummary_journal</a></span><span class="op">(</span>journal <span class="op">=</span> <span class="st">"jama"</span><span class="op">)</span>
 <span class="co">#&gt; Setting `JAMA` theme</span>
-<span class="fu"><a href="../reference/set_gtsummary_theme.html">set_gtsummary_theme</a></span>(<span class="fu"><a href="../reference/theme_gtsummary.html">theme_gtsummary_compact</a></span>())
-<span class="co">#&gt; Setting `Compact` theme</span></pre></body></html></div>
+<span class="fu"><a href="../reference/theme_gtsummary.html">theme_gtsummary_compact</a></span><span class="op">(</span><span class="op">)</span>
+<span class="co">#&gt; Setting `Compact` theme</span></code></pre></div>
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#nvmafatofu .gt_table {
+#blzmdkccvh .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
   font-size: small;
+  font-weight: normal;
+  font-style: normal;
   background-color: #FFFFFF;
   width: auto;
   border-top-style: solid;
@@ -977,7 +1008,7 @@
   border-left-color: #D3D3D3;
 }
 
-#nvmafatofu .gt_heading {
+#blzmdkccvh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -989,7 +1020,7 @@
   border-right-color: #D3D3D3;
 }
 
-#nvmafatofu .gt_title {
+#blzmdkccvh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -999,7 +1030,7 @@
   border-bottom-width: 0;
 }
 
-#nvmafatofu .gt_subtitle {
+#blzmdkccvh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1009,13 +1040,13 @@
   border-top-width: 0;
 }
 
-#nvmafatofu .gt_bottom_border {
+#blzmdkccvh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#nvmafatofu .gt_col_headings {
+#blzmdkccvh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1030,7 +1061,7 @@
   border-right-color: #D3D3D3;
 }
 
-#nvmafatofu .gt_col_heading {
+#blzmdkccvh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1050,7 +1081,7 @@
   overflow-x: hidden;
 }
 
-#nvmafatofu .gt_column_spanner_outer {
+#blzmdkccvh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1062,15 +1093,15 @@
   padding-right: 4px;
 }
 
-#nvmafatofu .gt_column_spanner_outer:first-child {
+#blzmdkccvh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#nvmafatofu .gt_column_spanner_outer:last-child {
+#blzmdkccvh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#nvmafatofu .gt_column_spanner {
+#blzmdkccvh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1082,7 +1113,7 @@
   width: 100%;
 }
 
-#nvmafatofu .gt_group_heading {
+#blzmdkccvh .gt_group_heading {
   padding: 1px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1104,7 +1135,7 @@
   vertical-align: middle;
 }
 
-#nvmafatofu .gt_empty_group_heading {
+#blzmdkccvh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1119,19 +1150,15 @@
   vertical-align: middle;
 }
 
-#nvmafatofu .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#nvmafatofu .gt_from_md > :first-child {
+#blzmdkccvh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nvmafatofu .gt_from_md > :last-child {
+#blzmdkccvh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nvmafatofu .gt_row {
+#blzmdkccvh .gt_row {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -1150,7 +1177,7 @@
   overflow-x: hidden;
 }
 
-#nvmafatofu .gt_stub {
+#blzmdkccvh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1162,7 +1189,7 @@
   padding-left: 12px;
 }
 
-#nvmafatofu .gt_summary_row {
+#blzmdkccvh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1172,7 +1199,7 @@
   padding-right: 5px;
 }
 
-#nvmafatofu .gt_first_summary_row {
+#blzmdkccvh .gt_first_summary_row {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -1182,7 +1209,7 @@
   border-top-color: #D3D3D3;
 }
 
-#nvmafatofu .gt_grand_summary_row {
+#blzmdkccvh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1192,7 +1219,7 @@
   padding-right: 5px;
 }
 
-#nvmafatofu .gt_first_grand_summary_row {
+#blzmdkccvh .gt_first_grand_summary_row {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -1202,7 +1229,11 @@
   border-top-color: #D3D3D3;
 }
 
-#nvmafatofu .gt_table_body {
+#blzmdkccvh .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#blzmdkccvh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1211,7 +1242,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#nvmafatofu .gt_footnotes {
+#blzmdkccvh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1225,13 +1256,13 @@
   border-right-color: #D3D3D3;
 }
 
-#nvmafatofu .gt_footnote {
+#blzmdkccvh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 1px;
 }
 
-#nvmafatofu .gt_sourcenotes {
+#blzmdkccvh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1245,62 +1276,64 @@
   border-right-color: #D3D3D3;
 }
 
-#nvmafatofu .gt_sourcenote {
+#blzmdkccvh .gt_sourcenote {
   font-size: 90%;
   padding: 1px;
 }
 
-#nvmafatofu .gt_left {
+#blzmdkccvh .gt_left {
   text-align: left;
 }
 
-#nvmafatofu .gt_center {
+#blzmdkccvh .gt_center {
   text-align: center;
 }
 
-#nvmafatofu .gt_right {
+#blzmdkccvh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nvmafatofu .gt_font_normal {
+#blzmdkccvh .gt_font_normal {
   font-weight: normal;
 }
 
-#nvmafatofu .gt_font_bold {
+#blzmdkccvh .gt_font_bold {
   font-weight: bold;
 }
 
-#nvmafatofu .gt_font_italic {
+#blzmdkccvh .gt_font_italic {
   font-style: italic;
 }
 
-#nvmafatofu .gt_super {
+#blzmdkccvh .gt_super {
   font-size: 65%;
 }
 
-#nvmafatofu .gt_footnote_marks {
+#blzmdkccvh .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="nvmafatofu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
+<div id="blzmdkccvh" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
 <thead class="gt_col_headings"><tr>
 <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><strong>Characteristic</strong></th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
-<strong>Drug A</strong>, N = 98</th>
+<strong>Drug A</strong>, N = 98<sup class="gt_footnote_marks">1</sup>
+</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
-<strong>Drug B</strong>, N = 102</th>
+<strong>Drug B</strong>, N = 102<sup class="gt_footnote_marks">1</sup>
+</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
-<strong>p-value</strong><sup class="gt_footnote_marks">1</sup>
+<strong>p-value</strong><sup class="gt_footnote_marks">2</sup>
 </th>
     </tr></thead>
 <tbody class="gt_table_body">
 <tr>
-<td class="gt_row gt_left">Age, yrs, median (IQR)</td>
-      <td class="gt_row gt_center">46 (37 - 59)</td>
-      <td class="gt_row gt_center">48 (39 - 56)</td>
-      <td class="gt_row gt_center">&lt;0.001</td>
+<td class="gt_row gt_left">Age</td>
+      <td class="gt_row gt_center">46 (37 – 59)</td>
+      <td class="gt_row gt_center">48 (39 – 56)</td>
+      <td class="gt_row gt_center">0.72</td>
     </tr>
 <tr>
 <td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Unknown</td>
@@ -1309,7 +1342,7 @@
       <td class="gt_row gt_center"></td>
     </tr>
 <tr>
-<td class="gt_row gt_left">Grade, n (%)</td>
+<td class="gt_row gt_left">Grade</td>
       <td class="gt_row gt_center"></td>
       <td class="gt_row gt_center"></td>
       <td class="gt_row gt_center">0.87</td>
@@ -1339,13 +1372,429 @@
           <sup class="gt_footnote_marks"><em>1</em>
           </sup>
            
-          Statistical tests performed: Wilcoxon rank-sum test; chi-square test of independence
+          Median (IQR); n (%)
+          <br></p>
+        <p class="gt_footnote">
+          <sup class="gt_footnote_marks"><em>2</em>
+          </sup>
+           
+          Wilcoxon rank sum test; Pearson's Chi-squared test
           <br></p>
       </td>
     </tr></tfoot>
 </table></div>
-<p>Clear all previously set themes using the <code><a href="../reference/set_gtsummary_theme.html">reset_gtsummary_theme()</a></code></p>
-<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="fu"><a href="../reference/set_gtsummary_theme.html">reset_gtsummary_theme</a></span>()</pre></body></html></div>
+</div>
+<div id="jama-compact-language-theme" class="section level4">
+<h4 class="hasAnchor">
+<a href="#jama-compact-language-theme" class="anchor"></a>JAMA + Compact + Language Theme</h4>
+<p>All {gtsummary} tables can be translated into another language using <code><a href="../reference/theme_gtsummary.html">theme_gtsummary_language()</a></code>!</p>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#kngdkmevdy .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#kngdkmevdy .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kngdkmevdy .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#kngdkmevdy .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#kngdkmevdy .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kngdkmevdy .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kngdkmevdy .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#kngdkmevdy .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#kngdkmevdy .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#kngdkmevdy .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#kngdkmevdy .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#kngdkmevdy .gt_group_heading {
+  padding: 1px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kngdkmevdy .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kngdkmevdy .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#kngdkmevdy .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#kngdkmevdy .gt_row {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#kngdkmevdy .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#kngdkmevdy .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kngdkmevdy .gt_first_summary_row {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#kngdkmevdy .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kngdkmevdy .gt_first_grand_summary_row {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#kngdkmevdy .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#kngdkmevdy .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kngdkmevdy .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kngdkmevdy .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 1px;
+}
+
+#kngdkmevdy .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kngdkmevdy .gt_sourcenote {
+  font-size: 90%;
+  padding: 1px;
+}
+
+#kngdkmevdy .gt_left {
+  text-align: left;
+}
+
+#kngdkmevdy .gt_center {
+  text-align: center;
+}
+
+#kngdkmevdy .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#kngdkmevdy .gt_font_normal {
+  font-weight: normal;
+}
+
+#kngdkmevdy .gt_font_bold {
+  font-weight: bold;
+}
+
+#kngdkmevdy .gt_font_italic {
+  font-style: italic;
+}
+
+#kngdkmevdy .gt_super {
+  font-size: 65%;
+}
+
+#kngdkmevdy .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="kngdkmevdy" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
+<thead class="gt_col_headings"><tr>
+<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><strong>Característica</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
+<strong>Drug A</strong>, N = 98<sup class="gt_footnote_marks">1</sup>
+</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
+<strong>Drug B</strong>, N = 102<sup class="gt_footnote_marks">1</sup>
+</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
+<strong>p-value</strong><sup class="gt_footnote_marks">2</sup>
+</th>
+    </tr></thead>
+<tbody class="gt_table_body">
+<tr>
+<td class="gt_row gt_left">Age</td>
+      <td class="gt_row gt_center">46 (37 – 59)</td>
+      <td class="gt_row gt_center">48 (39 – 56)</td>
+      <td class="gt_row gt_center">0.72</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Desconocido</td>
+      <td class="gt_row gt_center">7</td>
+      <td class="gt_row gt_center">4</td>
+      <td class="gt_row gt_center"></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left">Grade</td>
+      <td class="gt_row gt_center"></td>
+      <td class="gt_row gt_center"></td>
+      <td class="gt_row gt_center">0.87</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">I</td>
+      <td class="gt_row gt_center">35 (36)</td>
+      <td class="gt_row gt_center">33 (32)</td>
+      <td class="gt_row gt_center"></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">II</td>
+      <td class="gt_row gt_center">32 (33)</td>
+      <td class="gt_row gt_center">36 (35)</td>
+      <td class="gt_row gt_center"></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">III</td>
+      <td class="gt_row gt_center">31 (32)</td>
+      <td class="gt_row gt_center">33 (32)</td>
+      <td class="gt_row gt_center"></td>
+    </tr>
+</tbody>
+<tfoot><tr class="gt_footnotes">
+<td colspan="4">
+        <p class="gt_footnote">
+          <sup class="gt_footnote_marks"><em>1</em>
+          </sup>
+           
+          Mediana (RIQ); n (%)
+          <br></p>
+        <p class="gt_footnote">
+          <sup class="gt_footnote_marks"><em>2</em>
+          </sup>
+           
+          prueba de los rangos con signo de Wilcoxon; prueba chi cuadrado de independencia
+          <br></p>
+      </td>
+    </tr></tfoot>
+</table></div>
+<p><em>Clear all previously set themes using</em> <code><a href="../reference/set_gtsummary_theme.html">reset_gtsummary_theme()</a></code>.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/set_gtsummary_theme.html">reset_gtsummary_theme</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
 <div id="writing-themes" class="section level2">
@@ -1355,15 +1804,19 @@
 <h3 class="hasAnchor">
 <a href="#theme-structure" class="anchor"></a>Theme Structure</h3>
 <p>There are many parts of a {gtsummary} table that may be controlled with theme elements. To construct a personalized theme, create a named list of at least one theme element. Here’s an example of a theme that modifies the function that styles p-values and updates the default statistics reported in <code><a href="../reference/tbl_summary.html">tbl_summary()</a></code>.</p>
-<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">my_theme</span> <span class="kw">&lt;-</span>
-  <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(
-    <span class="st">"pkgwide-fn:pvalue_fun"</span> <span class="kw">=</span> <span class="kw">function</span>(<span class="no">x</span>) <span class="fu"><a href="../reference/style_pvalue.html">style_pvalue</a></span>(<span class="no">x</span>, <span class="kw">digits</span> <span class="kw">=</span> <span class="fl">2</span>),
-    <span class="st">"pkgwide-fn:prependpvalue_fun"</span> <span class="kw">=</span> <span class="kw">function</span>(<span class="no">x</span>) <span class="fu"><a href="../reference/style_pvalue.html">style_pvalue</a></span>(<span class="no">x</span>, <span class="kw">digits</span> <span class="kw">=</span> <span class="fl">2</span>, <span class="kw">prepend_p</span> <span class="kw">=</span> <span class="fl">TRUE</span>),
-    <span class="st">"tbl_summary-str:continuous_stat"</span> <span class="kw">=</span> <span class="st">"{median} ({p25} - {p75})"</span>,
-    <span class="st">"tbl_summary-str:categorical_stat"</span> <span class="kw">=</span> <span class="st">"{n} ({p})"</span>
-  )</pre></body></html></div>
-<p>Once you create the theme, you can set it just like one of the included themes.</p>
-<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="fu"><a href="../reference/set_gtsummary_theme.html">set_gtsummary_theme</a></span>(<span class="no">my_theme</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">my_theme</span> <span class="op">&lt;-</span>   
+  <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
+    <span class="co"># round large p-values to two places</span>
+    <span class="st">"pkgwide-fn:pvalue_fun"</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="../reference/style_pvalue.html">style_pvalue</a></span><span class="op">(</span><span class="va">x</span>, digits <span class="op">=</span> <span class="fl">2</span><span class="op">)</span>,
+    <span class="st">"pkgwide-fn:prependpvalue_fun"</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="../reference/style_pvalue.html">style_pvalue</a></span><span class="op">(</span><span class="va">x</span>, digits <span class="op">=</span> <span class="fl">2</span>, prepend_p <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,
+    <span class="co"># report median (IQR) and n (percent) as default stats in `tbl_summary()`</span>
+    <span class="st">"tbl_summary-str:continuous_stat"</span> <span class="op">=</span> <span class="st">"{median} ({p25} - {p75})"</span>,
+    <span class="st">"tbl_summary-str:categorical_stat"</span> <span class="op">=</span> <span class="st">"{n} ({p})"</span>
+  <span class="op">)</span></code></pre></div>
+<p>Once you create the theme, you can set it with <code><a href="../reference/set_gtsummary_theme.html">set_gtsummary_theme()</a></code>.</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/set_gtsummary_theme.html">set_gtsummary_theme</a></span><span class="op">(</span><span class="va">my_theme</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="theme-elements" class="section level3">
 <h3 class="hasAnchor">
@@ -1374,13 +1827,15 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#wvmuohgplf .gt_table {
+#twmnaabvvb .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
   font-size: small;
+  font-weight: normal;
+  font-style: normal;
   background-color: #FFFFFF;
   width: auto;
   border-top-style: solid;
@@ -1397,7 +1852,7 @@
   border-left-color: #D3D3D3;
 }
 
-#wvmuohgplf .gt_heading {
+#twmnaabvvb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1409,7 +1864,7 @@
   border-right-color: #D3D3D3;
 }
 
-#wvmuohgplf .gt_title {
+#twmnaabvvb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1419,7 +1874,7 @@
   border-bottom-width: 0;
 }
 
-#wvmuohgplf .gt_subtitle {
+#twmnaabvvb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1429,13 +1884,13 @@
   border-top-width: 0;
 }
 
-#wvmuohgplf .gt_bottom_border {
+#twmnaabvvb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wvmuohgplf .gt_col_headings {
+#twmnaabvvb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1450,7 +1905,7 @@
   border-right-color: #D3D3D3;
 }
 
-#wvmuohgplf .gt_col_heading {
+#twmnaabvvb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1470,7 +1925,7 @@
   overflow-x: hidden;
 }
 
-#wvmuohgplf .gt_column_spanner_outer {
+#twmnaabvvb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1482,15 +1937,15 @@
   padding-right: 4px;
 }
 
-#wvmuohgplf .gt_column_spanner_outer:first-child {
+#twmnaabvvb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wvmuohgplf .gt_column_spanner_outer:last-child {
+#twmnaabvvb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wvmuohgplf .gt_column_spanner {
+#twmnaabvvb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1502,7 +1957,7 @@
   width: 100%;
 }
 
-#wvmuohgplf .gt_group_heading {
+#twmnaabvvb .gt_group_heading {
   padding: 1px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1524,7 +1979,7 @@
   vertical-align: middle;
 }
 
-#wvmuohgplf .gt_empty_group_heading {
+#twmnaabvvb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1539,19 +1994,15 @@
   vertical-align: middle;
 }
 
-#wvmuohgplf .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#wvmuohgplf .gt_from_md > :first-child {
+#twmnaabvvb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wvmuohgplf .gt_from_md > :last-child {
+#twmnaabvvb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wvmuohgplf .gt_row {
+#twmnaabvvb .gt_row {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -1570,7 +2021,7 @@
   overflow-x: hidden;
 }
 
-#wvmuohgplf .gt_stub {
+#twmnaabvvb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1582,7 +2033,7 @@
   padding-left: 12px;
 }
 
-#wvmuohgplf .gt_summary_row {
+#twmnaabvvb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1592,7 +2043,7 @@
   padding-right: 5px;
 }
 
-#wvmuohgplf .gt_first_summary_row {
+#twmnaabvvb .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1602,7 +2053,7 @@
   border-top-color: #D3D3D3;
 }
 
-#wvmuohgplf .gt_grand_summary_row {
+#twmnaabvvb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1612,7 +2063,7 @@
   padding-right: 5px;
 }
 
-#wvmuohgplf .gt_first_grand_summary_row {
+#twmnaabvvb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1622,7 +2073,11 @@
   border-top-color: #D3D3D3;
 }
 
-#wvmuohgplf .gt_table_body {
+#twmnaabvvb .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#twmnaabvvb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1631,7 +2086,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#wvmuohgplf .gt_footnotes {
+#twmnaabvvb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1645,13 +2100,13 @@
   border-right-color: #D3D3D3;
 }
 
-#wvmuohgplf .gt_footnote {
+#twmnaabvvb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#wvmuohgplf .gt_sourcenotes {
+#twmnaabvvb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1665,46 +2120,46 @@
   border-right-color: #D3D3D3;
 }
 
-#wvmuohgplf .gt_sourcenote {
+#twmnaabvvb .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#wvmuohgplf .gt_left {
+#twmnaabvvb .gt_left {
   text-align: left;
 }
 
-#wvmuohgplf .gt_center {
+#twmnaabvvb .gt_center {
   text-align: center;
 }
 
-#wvmuohgplf .gt_right {
+#twmnaabvvb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wvmuohgplf .gt_font_normal {
+#twmnaabvvb .gt_font_normal {
   font-weight: normal;
 }
 
-#wvmuohgplf .gt_font_bold {
+#twmnaabvvb .gt_font_bold {
   font-weight: bold;
 }
 
-#wvmuohgplf .gt_font_italic {
+#twmnaabvvb .gt_font_italic {
   font-style: italic;
 }
 
-#wvmuohgplf .gt_super {
+#twmnaabvvb .gt_super {
   font-size: 65%;
 }
 
-#wvmuohgplf .gt_footnote_marks {
+#twmnaabvvb .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="wvmuohgplf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
+<div id="twmnaabvvb" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
 <thead class="gt_col_headings"><tr>
 <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Theme Element</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Description</th>
@@ -1712,51 +2167,136 @@
     </tr></thead>
 <tbody class="gt_table_body">
 <tr class="gt_group_heading_row">
-<td colspan="3" class="gt_group_heading">Package-wide</td>
+<td colspan="3" class="gt_group_heading">add_global_p</td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>pkgwide-str:theme_name</code></p>
+<p><code>add_global_p-str:type</code></p>
 </div></td>
-      <td class="gt_row gt_left">optional name of theme</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"My Personal Theme"</code></p>
+<p>set argument default for <code><a href="../reference/add_global_p.html">add_global_p.tbl_regression(type=)</a></code> and <code><a href="../reference/add_global_p.html">add_global_p.tbl_uvregression(type=)</a></code></p>
 </div></td>
-    </tr>
-<tr>
-<td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>pkgwide-str:print_engine</code></p>
-</div></td>
-      <td class="gt_row gt_left">string indicating the default print engine</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"kable"</code></p>
+<p><code>"II"</code></p>
 </div></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>pkgwide-fn:pvalue_fun</code></p>
+<p><code>add_global_p-str:type</code></p>
 </div></td>
-      <td class="gt_row gt_left">function to style p-values throughout package</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>function(x) style_pvalue(x, digits = 2)</code></p>
+<p>set argument default for <code><a href="../reference/add_global_p.html">add_global_p.tbl_regression(type=)</a></code> and <code><a href="../reference/add_global_p.html">add_global_p.tbl_uvregression(type=)</a></code>; default is <code>"III"</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"II"</code></p>
+</div></td>
+    </tr>
+<tr class="gt_group_heading_row">
+<td colspan="3" class="gt_group_heading">add_p.tbl_summary</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>add_p.tbl_summary-attr:test.categorical</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>default test for categorical/dichotomous variables</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"chisq.test"</code></p>
 </div></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>pkgwide-fn:prependpvalue_fun</code></p>
+<p><code>add_p.tbl_summary-attr:test.categorical.group_by2</code></p>
 </div></td>
-      <td class="gt_row gt_left">function to style p-values throughout package that include a "p" prefix, e.g. "p&lt;0.001" or "p=0.12"</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>function(x) style_pvalue(x, digits = 2, prepend_p = TRUE)</code></p>
+<p>default test for categorical/dichotomous grouped/correlated variables with a 2-level by variable</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"lme4"</code></p>
 </div></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>pkgwide-lgl:quiet</code></p>
+<p><code>add_p.tbl_summary-attr:test.categorical.low_count</code></p>
 </div></td>
-      <td class="gt_row gt_left">logical indicating whether to suppress messages or not</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p>``</p>
+<p>default test for categorical/dichotomous variables with minimum expected count &lt;5</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"fisher.test"</code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>add_p.tbl_summary-attr:test.continuous</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>default test for continuous variables with a 3- or more level by variable</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"aov"</code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>add_p.tbl_summary-attr:test.continuous.group_by2</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>default test for continuous grouped/correlated variables with a 2-level by variable</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"lme4"</code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>add_p.tbl_summary-attr:test.continuous_by2</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>default test for continuous variables with a 2-level by variable</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"t.test"</code></p>
+</div></td>
+    </tr>
+<tr class="gt_group_heading_row">
+<td colspan="3" class="gt_group_heading">add_p.tbl_svysummary</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>add_p.tbl_svysummary-attr:test.categorical</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>default test for categorical/dichotomous variables</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"svy.chisq.test"</code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>add_p.tbl_svysummary-attr:test.continuous</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>default test for continuous variables</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"svy.wilcox.test"</code></p>
+</div></td>
+    </tr>
+<tr class="gt_group_heading_row">
+<td colspan="3" class="gt_group_heading">as_flex_table</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>as_flex_table-lst:addl_cmds</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>named list of expressions of {flextable} package commands inserted in the <code><a href="../reference/as_flex_table.html">as_flex_table()</a></code> call; do not include the <code>data=</code> argument; the list of expressions is inserted after the named call, e.g. if the named list element is <code>"tab_spanner"</code> the expressions will be inserted after expressions named <code>"tab_spanner"</code>; to see the names of the expressions run <code><a href="../reference/as_flex_table.html">as_flex_table(x, return_calls = TRUE)</a></code> and check the names.</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code><a href="https://rdrr.io/r/base/list.html">list(autofit = list(rlang::expr(flextable::font(fontname = "Bodoni 72", part = "all")), rlang::expr(flextable::fontsize(size = 8, part = "all"))))</a></code></p>
 </div></td>
     </tr>
 <tr class="gt_group_heading_row">
@@ -1766,34 +2306,24 @@
 <td class="gt_row gt_left"><div class="gt_from_md">
 <p><code>as_gt-lst:addl_cmds</code></p>
 </div></td>
-      <td class="gt_row gt_left">list expression of gt-package commands inserted in the `as_gt()` call. Do not include the `data=` argument. Expression is inserted after the named call, e.g. after "tab_spanner" in the example.</td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>named list of expressions of {gt} package commands inserted in the <code><a href="../reference/as_gt.html">as_gt()</a></code> call; do not include the <code>data=</code> argument; the list of expressions is inserted after the named call, e.g. if the named list element is <code>"tab_spanner"</code> the expressions will be inserted after expressions named <code>"tab_spanner"</code>; to see the names of the expressions run <code><a href="../reference/as_gt.html">as_gt(x, return_calls = TRUE)</a></code> and check the names.</p>
+</div></td>
       <td class="gt_row gt_left"><div class="gt_from_md">
 <p><code><a href="https://rdrr.io/r/base/list.html">list(tab_spanner = rlang::expr(gt::tab_options(table.font.size = 'small')))</a></code></p>
 </div></td>
     </tr>
 <tr class="gt_group_heading_row">
-<td colspan="3" class="gt_group_heading">as_flextable.gtsummary</td>
+<td colspan="3" class="gt_group_heading">as_hux_table</td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>as_flextable.gtsummary-lst:addl_cmds</code></p>
+<p><code>as_hux_table.gtsummary-lst:addl_cmds</code></p>
 </div></td>
-      <td class="gt_row gt_left">list of expressions of flextable-package commands inserted in the `as_flextable()` call. Do not include the `data=` argument. Expression is inserted after the named call, e.g. after "autofit" in the example.</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code><a href="https://rdrr.io/r/base/list.html">list(autofit = list(rlang::expr(flextable::font(fontname = "Bodoni 72", part = "all")), rlang::expr(flextable::fontsize(size = 8, part = "all"))))</a></code></p>
+<p>named list of expressions of {huxtable} package commands inserted in the <code><a href="../reference/as_hux_table.html">as_hux_table()</a></code> call; do not include the <code>data=</code> argument; the list of expressions is inserted after the named call, e.g. if the named list element is <code>"tab_spanner"</code> the expressions will be inserted after expressions named <code>"tab_spanner"</code>; to see the names of the expressions run <code><a href="../reference/as_hux_table.html">as_hux_table(x, return_calls = TRUE)</a></code> and check the names.</p>
 </div></td>
-    </tr>
-<tr class="gt_group_heading_row">
-<td colspan="3" class="gt_group_heading">as_huxtable.gtsummary</td>
-    </tr>
-<tr>
-<td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>as_huxtable.gtsummary-lst:addl_cmds</code></p>
-</div></td>
-      <td class="gt_row gt_left">list expression of huxtable-package commands inserted in the `as_huxtable()` call. Do not include the `data=` argument. Expression is inserted after the named call.</td>
-      <td class="gt_row gt_left"><div class="gt_from_md">
-<p>``</p>
-</div></td>
+      <td class="gt_row gt_left"></td>
     </tr>
 <tr class="gt_group_heading_row">
 <td colspan="3" class="gt_group_heading">as_kable_extra</td>
@@ -1802,105 +2332,98 @@
 <td class="gt_row gt_left"><div class="gt_from_md">
 <p><code>as_kable_extra-lst:addl_cmds</code></p>
 </div></td>
-      <td class="gt_row gt_left">list expression of kableExtra-package commands inserted in the `as_kable_extra()` call. Do not include the `data=` argument. Expression is inserted after the named call.</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p>``</p>
+<p>named list of expressions of {kableExtra} package commands inserted in the <code><a href="../reference/as_kable_extra.html">as_kable_extra()</a></code> call; do not include the <code>data=</code> argument; the list of expressions is inserted after the named call, e.g. if the named list element is <code>"tab_spanner"</code> the expressions will be inserted after expressions named <code>"tab_spanner"</code>; to see the names of the expressions run <code><a href="../reference/as_kable_extra.html">as_kable_extra(x, return_calls = TRUE)</a></code> and check the names.</p>
 </div></td>
+      <td class="gt_row gt_left"></td>
     </tr>
 <tr class="gt_group_heading_row">
-<td colspan="3" class="gt_group_heading">tbl_summary</td>
+<td colspan="3" class="gt_group_heading">Package-wide</td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>tbl_summary-fn:percent_fun</code></p>
+<p><code>pkgwide-fn:prependpvalue_fun</code></p>
 </div></td>
-      <td class="gt_row gt_left">function to style percentages</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>function(x) style_percent(x)</code></p>
+<p>function to style p-values throughout package that include a "p" prefix, e.g. "p&lt;0.001" or "p=0.12"; this is common in the <code><a href="../reference/inline_text.html">inline_text()</a></code> functions; default is <code>function(x) style_pvalue(x, prepend_p = TRUE)</code></p>
 </div></td>
-    </tr>
-<tr>
-<td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>tbl_summary-fn:N_fun</code></p>
-</div></td>
-      <td class="gt_row gt_left">function to style intergers</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>function(x) sprintf("%.0f", x)</code></p>
+<p><code>function(x) style_pvalue(x, digits = 2, prepend_p = TRUE)</code></p>
 </div></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>tbl_summary-str:continuous_stat</code></p>
+<p><code>pkgwide-fn:pvalue_fun</code></p>
 </div></td>
-      <td class="gt_row gt_left">glue string defining the default continuous summary statistics to display</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"{mean} ({sd})"</code></p>
+<p>function to style p-values throughout package; default is <code>style_pvalue</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>function(x) style_pvalue(x, digits = 2)</code></p>
 </div></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>tbl_summary-str:categorical_stat</code></p>
+<p><code>pkgwide-lgl:quiet</code></p>
 </div></td>
-      <td class="gt_row gt_left">glue string defining the default categorical and dichotomous summary statistics to display</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"{n} / {N} ({p}%)"</code></p>
+<p>logical indicating whether to suppress messages or not; default is <code>FALSE</code></p>
 </div></td>
-    </tr>
-<tr class="gt_group_heading_row">
-<td colspan="3" class="gt_group_heading">add_p.tbl_summary</td>
+      <td class="gt_row gt_left"></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>add_p.tbl_summary-attr:test.continuous_by2</code></p>
+<p><code>pkgwide-str:ci.sep</code></p>
 </div></td>
-      <td class="gt_row gt_left">default test for continuous variables with a 2-level by variable</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"t.test"</code></p>
+<p>string indicating separator between upper and lower bounds of confidence intervals. Default is <code>", "</code></p>
 </div></td>
-    </tr>
-<tr>
-<td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>add_p.tbl_summary-attr:test.continuous</code></p>
-</div></td>
-      <td class="gt_row gt_left">default test for continuous variables with a 3- or more level by variable</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"aov"</code></p>
+<p><code>" to "</code></p>
 </div></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>add_p.tbl_summary-attr:test.categorical</code></p>
+<p><code>pkgwide-str:language</code></p>
 </div></td>
-      <td class="gt_row gt_left">default test for categorical/dichotomous variables</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"chisq.test"</code></p>
+<p>string indicating language; default is <code>"en"</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"es"</code></p>
 </div></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>add_p.tbl_summary-attr:test.categorical.low_count</code></p>
+<p><code>pkgwide-str:print_engine</code></p>
 </div></td>
-      <td class="gt_row gt_left">default test for categorical/dichotomous variables with minimum expected count &lt;5</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"fisher.test"</code></p>
+<p>string indicating the default print engine; default is <code>"gt"</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"flextable"</code></p>
 </div></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>add_p.tbl_summary-attr:test.categorical.group_by2</code></p>
+<p><code>pkgwide-str:theme_name</code></p>
 </div></td>
-      <td class="gt_row gt_left">default test for categorical/dichotomous grouped/correlated variables with a 2-level by variable</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"lme4"</code></p>
+<p>optional name of theme; name is printed when theme loaded</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"My Personal Theme"</code></p>
 </div></td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>add_p.tbl_summary-attr:test.continuous.group_by2</code></p>
+<p><code>pkgwide-fun:pre_conversion</code></p>
 </div></td>
-      <td class="gt_row gt_left">default test for continuous grouped/correlated variables with a 2-level by variable</td>
       <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>"lme4"</code></p>
+<p>function that is executed on the gtsummary object before it is converted with <code><a href="../reference/as_gt.html">as_gt()</a></code>, <code><a href="../reference/as_flex_table.html">as_flex_table()</a></code>, etc. Must be a function that can be run on every and any gtsummary object</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>bold_levels</code></p>
 </div></td>
     </tr>
 <tr class="gt_group_heading_row">
@@ -1908,11 +2431,118 @@
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_regression-chr:tidy_columns</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>character vector of columns from <code>tidy_fun=</code> tibble to print. 'estimate' column will always be printed. Select among columns 'conf.low', 'conf.high', 'std.error', 'statistic', or 'p.value'.</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code><a href="https://rdrr.io/r/base/c.html">c("std.error", "p.value")</a></code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_regression-lst:tidy_plus_plus</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>Additional <code>tidy_plus_plus()</code> arguments. Cannot be one of <code>model=</code>, <code>tidy_fun=</code>, <code>exponentiate=</code>, <code>variable_labels=</code>, <code>show_single_row=</code>, <code>intercept=</code>, <code>include=</code>, <code>conf.level=</code>, or <code>strict=</code> as these are controlled by <code><a href="../reference/tbl_summary.html">tbl_summary()</a></code>. The default value for the additional arguments is <code><a href="https://rdrr.io/r/base/list.html">list(conf.int = TRUE, add_header_rows = TRUE, add_estimate_to_reference_rows = FALSE)</a></code>.</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code><a href="https://rdrr.io/r/base/list.html">list(conf.int = TRUE, add_header_rows = TRUE, add_estimate_to_reference_rows = TRUE)</a></code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
 <p><code>tbl_regression-str:coef_header</code></p>
 </div></td>
-      <td class="gt_row gt_left">String setting the default term for the beta coefficient column header</td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>string setting the default term for the beta coefficient column header; default is <code>"Beta"</code></p>
+</div></td>
       <td class="gt_row gt_left"><div class="gt_from_md">
 <p><code><a href="https://rdrr.io/r/base/ifelse.html">ifelse(exponentiate == TRUE, "exp(coef)", "coef")</a></code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_regression-str:ref_row_text</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>string indicating the text to print on reference rows (default is an em-dash)</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"Reference"</code></p>
+</div></td>
+    </tr>
+<tr class="gt_group_heading_row">
+<td colspan="3" class="gt_group_heading">tbl_stack</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_stack-str:group_header</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>string indicating the group column header used in <code><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble()</a></code>, <code><a href="../reference/as_flex_table.html">as_flex_table()</a></code>, etc. where row headers are not supported; default is <code>"**Group**"</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"**Group Status**"</code></p>
+</div></td>
+    </tr>
+<tr class="gt_group_heading_row">
+<td colspan="3" class="gt_group_heading">tbl_summary</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_summary-fn:N_fun</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>function to style integers. Currently questioning...THIS MAY BE REMOVED IN A FUTURE RELEASE. Use <code>style_number-arg:big.mark</code> and <code>style_number-arg:decimal.mark</code> instead.</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>function(x) sprintf("%.0f", x)</code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_summary-fn:percent_fun</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>function to style percentages; default is <code>style_percent</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>function(x) style_percent(x)</code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_summary-str:categorical_stat</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>glue string defining the default categorical and dichotomous summary statistics to display; default is <code>"{n} ({p}%)"</code>. Also sets default statistic for <code><a href="../reference/tbl_svysummary.html">tbl_svysummary()</a></code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"{n} / {N} ({p}%)"</code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_summary-str:continuous_stat</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>glue string defining the default continuous summary statistics to display; default is <code>"{median} ({p25}, {p75})"</code>. Also sets default statistic for <code><a href="../reference/tbl_svysummary.html">tbl_svysummary()</a></code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"{mean} ({sd})"</code></p>
+</div></td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_summary-str:default_con_type</code></p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p>string indicating the default summary type for continuous variables; default is <code>"continuous"</code>; update to <code>"continuous2"</code> for multi-line summaries of continuous variables</p>
+</div></td>
+      <td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>"continuous2"</code></p>
 </div></td>
     </tr>
 </tbody>
@@ -1922,13 +2552,15 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ououhnhkrv .gt_table {
+#wtqokthuyv .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
   font-size: small;
+  font-weight: normal;
+  font-style: normal;
   background-color: #FFFFFF;
   width: auto;
   border-top-style: solid;
@@ -1945,7 +2577,7 @@
   border-left-color: #D3D3D3;
 }
 
-#ououhnhkrv .gt_heading {
+#wtqokthuyv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1957,7 +2589,7 @@
   border-right-color: #D3D3D3;
 }
 
-#ououhnhkrv .gt_title {
+#wtqokthuyv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1967,7 +2599,7 @@
   border-bottom-width: 0;
 }
 
-#ououhnhkrv .gt_subtitle {
+#wtqokthuyv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1977,13 +2609,13 @@
   border-top-width: 0;
 }
 
-#ououhnhkrv .gt_bottom_border {
+#wtqokthuyv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ououhnhkrv .gt_col_headings {
+#wtqokthuyv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1998,7 +2630,7 @@
   border-right-color: #D3D3D3;
 }
 
-#ououhnhkrv .gt_col_heading {
+#wtqokthuyv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2018,7 +2650,7 @@
   overflow-x: hidden;
 }
 
-#ououhnhkrv .gt_column_spanner_outer {
+#wtqokthuyv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2030,15 +2662,15 @@
   padding-right: 4px;
 }
 
-#ououhnhkrv .gt_column_spanner_outer:first-child {
+#wtqokthuyv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ououhnhkrv .gt_column_spanner_outer:last-child {
+#wtqokthuyv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ououhnhkrv .gt_column_spanner {
+#wtqokthuyv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2050,7 +2682,7 @@
   width: 100%;
 }
 
-#ououhnhkrv .gt_group_heading {
+#wtqokthuyv .gt_group_heading {
   padding: 1px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2072,7 +2704,7 @@
   vertical-align: middle;
 }
 
-#ououhnhkrv .gt_empty_group_heading {
+#wtqokthuyv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2087,19 +2719,15 @@
   vertical-align: middle;
 }
 
-#ououhnhkrv .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#ououhnhkrv .gt_from_md > :first-child {
+#wtqokthuyv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ououhnhkrv .gt_from_md > :last-child {
+#wtqokthuyv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ououhnhkrv .gt_row {
+#wtqokthuyv .gt_row {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -2118,7 +2746,7 @@
   overflow-x: hidden;
 }
 
-#ououhnhkrv .gt_stub {
+#wtqokthuyv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2130,7 +2758,7 @@
   padding-left: 12px;
 }
 
-#ououhnhkrv .gt_summary_row {
+#wtqokthuyv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2140,7 +2768,7 @@
   padding-right: 5px;
 }
 
-#ououhnhkrv .gt_first_summary_row {
+#wtqokthuyv .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2150,7 +2778,7 @@
   border-top-color: #D3D3D3;
 }
 
-#ououhnhkrv .gt_grand_summary_row {
+#wtqokthuyv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2160,7 +2788,7 @@
   padding-right: 5px;
 }
 
-#ououhnhkrv .gt_first_grand_summary_row {
+#wtqokthuyv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2170,7 +2798,11 @@
   border-top-color: #D3D3D3;
 }
 
-#ououhnhkrv .gt_table_body {
+#wtqokthuyv .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#wtqokthuyv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2179,7 +2811,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#ououhnhkrv .gt_footnotes {
+#wtqokthuyv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2193,13 +2825,13 @@
   border-right-color: #D3D3D3;
 }
 
-#ououhnhkrv .gt_footnote {
+#wtqokthuyv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ououhnhkrv .gt_sourcenotes {
+#wtqokthuyv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2213,56 +2845,56 @@
   border-right-color: #D3D3D3;
 }
 
-#ououhnhkrv .gt_sourcenote {
+#wtqokthuyv .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ououhnhkrv .gt_left {
+#wtqokthuyv .gt_left {
   text-align: left;
 }
 
-#ououhnhkrv .gt_center {
+#wtqokthuyv .gt_center {
   text-align: center;
 }
 
-#ououhnhkrv .gt_right {
+#wtqokthuyv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ououhnhkrv .gt_font_normal {
+#wtqokthuyv .gt_font_normal {
   font-weight: normal;
 }
 
-#ououhnhkrv .gt_font_bold {
+#wtqokthuyv .gt_font_bold {
   font-weight: bold;
 }
 
-#ououhnhkrv .gt_font_italic {
+#wtqokthuyv .gt_font_italic {
   font-style: italic;
 }
 
-#ououhnhkrv .gt_super {
+#wtqokthuyv .gt_super {
   font-size: 65%;
 }
 
-#ououhnhkrv .gt_footnote_marks {
+#wtqokthuyv .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="ououhnhkrv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
+<div id="wtqokthuyv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="table gt_table">
 <thead class="gt_col_headings"><tr>
 <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Theme Element</th>
     </tr></thead>
 <tbody class="gt_table_body">
 <tr class="gt_group_heading_row">
-<td colspan="1" class="gt_group_heading">tbl_summary</td>
+<td colspan="1" class="gt_group_heading">add_p.tbl_cross</td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>tbl_summary-arg:label</code>, <code>tbl_summary-arg:statistic</code>, <code>tbl_summary-arg:digits</code>, <code>tbl_summary-arg:type</code>, <code>tbl_summary-arg:value</code>, <code>tbl_summary-arg:missing</code>, <code>tbl_summary-arg:missing_text</code>, <code>tbl_summary-arg:percent</code>, <code>tbl_summary-arg:sort</code></p>
+<p><code>add_p.tbl_cross-arg:pvalue_fun</code>, <code>add_p.tbl_cross-arg:source_note</code>, <code>add_p.tbl_cross-arg:test</code></p>
 </div></td>
     </tr>
 <tr class="gt_group_heading_row">
@@ -2270,15 +2902,15 @@
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>add_p.tbl_summary-arg:test</code>, <code>add_p.tbl_summary-arg:pvalue_fun</code></p>
+<p><code>add_p.tbl_summary-arg:pvalue_fun</code>, <code>add_p.tbl_summary-arg:test</code></p>
 </div></td>
     </tr>
 <tr class="gt_group_heading_row">
-<td colspan="1" class="gt_group_heading">add_stat_label</td>
+<td colspan="1" class="gt_group_heading">add_p.tbl_svysummary</td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>add_stat_label-arg:location</code></p>
+<p><code>add_p.tbl_svysummary-arg:pvalue_fun</code>, <code>add_p.tbl_svysummary-arg:test</code></p>
 </div></td>
     </tr>
 <tr class="gt_group_heading_row">
@@ -2290,11 +2922,35 @@
 </div></td>
     </tr>
 <tr class="gt_group_heading_row">
-<td colspan="1" class="gt_group_heading">add_p.tbl_cross</td>
+<td colspan="1" class="gt_group_heading">add_stat_label</td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>add_p.tbl_cross-arg:test</code>, <code>add_p.tbl_cross-arg:pvalue_fun</code></p>
+<p><code>add_stat_label-arg:location</code></p>
+</div></td>
+    </tr>
+<tr class="gt_group_heading_row">
+<td colspan="1" class="gt_group_heading">style_number</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>style_number-arg:big.mark</code>, <code>style_number-arg:decimal.mark</code></p>
+</div></td>
+    </tr>
+<tr class="gt_group_heading_row">
+<td colspan="1" class="gt_group_heading">tbl_regression</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_regression-arg:conf.level</code>, <code>tbl_regression-arg:estimate_fun</code>, <code>tbl_regression-arg:pvalue_fun</code>, <code>tbl_regression-arg:add_estimate_to_reference_rows</code>, <code>tbl_regression-arg:tidy_fun</code></p>
+</div></td>
+    </tr>
+<tr class="gt_group_heading_row">
+<td colspan="1" class="gt_group_heading">tbl_summary</td>
+    </tr>
+<tr>
+<td class="gt_row gt_left"><div class="gt_from_md">
+<p><code>tbl_summary-arg:digits</code>, <code>tbl_summary-arg:label</code>, <code>tbl_summary-arg:missing</code>, <code>tbl_summary-arg:missing_text</code>, <code>tbl_summary-arg:percent</code>, <code>tbl_summary-arg:sort</code>, <code>tbl_summary-arg:statistic</code>, <code>tbl_summary-arg:type</code>, <code>tbl_summary-arg:value</code></p>
 </div></td>
     </tr>
 <tr class="gt_group_heading_row">
@@ -2306,11 +2962,11 @@
 </div></td>
     </tr>
 <tr class="gt_group_heading_row">
-<td colspan="1" class="gt_group_heading">tbl_regression</td>
+<td colspan="1" class="gt_group_heading">tbl_svysummary</td>
     </tr>
 <tr>
 <td class="gt_row gt_left"><div class="gt_from_md">
-<p><code>tbl_regression-arg:conf.level</code>, <code>tbl_regression-arg:estimate_fun </code>, <code>tbl_regression-arg:pvalue_fun </code>, <code>tbl_regression-arg:tidy_fun </code></p>
+<p><code>tbl_svysummary-arg:digits</code>, <code>tbl_svysummary-arg:label</code>, <code>tbl_svysummary-arg:missing</code>, <code>tbl_svysummary-arg:missing_text</code>, <code>tbl_svysummary-arg:percent</code>, <code>tbl_svysummary-arg:sort</code>, <code>tbl_svysummary-arg:statistic</code>, <code>tbl_svysummary-arg:type</code>, <code>tbl_svysummary-arg:value</code></p>
 </div></td>
     </tr>
 </tbody>
@@ -2330,11 +2986,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by <a href="http://www.danieldsjoberg.com/">Daniel D. Sjoberg</a>, <a href="http://margarethannum.github.io/">Margie Hannum</a>, Karissa Whiting, <a href="http://www.emilyzabor.com/">Emily C. Zabor</a>.</p>
+  <p>Developed by <a href="http://www.danieldsjoberg.com/">Daniel D. Sjoberg</a>, Michael Curry, <a href="http://margarethannum.github.io/">Margie Hannum</a>, Joseph Larmarange, Karissa Whiting, <a href="http://www.emilyzabor.com/">Emily C. Zabor</a>.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

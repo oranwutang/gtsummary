@@ -4,25 +4,34 @@
     <loc>http://www.danieldsjoberg.com/gtsummary//index.html</loc>
   </url>
   <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_difference.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_glance_source_note.html</loc>
+  </url>
+  <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_global_p.html</loc>
-  </url>
-  <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_global_p.tbl_regression.html</loc>
-  </url>
-  <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_global_p.tbl_uvregression.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_n.html</loc>
   </url>
   <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_n.tbl_summary.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_n.tbl_survfit.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_n_regression.html</loc>
+  </url>
+  <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_nevent.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_nevent.tbl_regression.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_nevent.tbl_survfit.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_nevent.tbl_uvregression.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_nevent_regression.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_overall.html</loc>
@@ -37,7 +46,16 @@
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_p.tbl_summary.html</loc>
   </url>
   <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_p.tbl_survfit.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_p.tbl_svysummary.html</loc>
+  </url>
+  <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_q.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_significance_stars.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_stat.html</loc>
@@ -46,13 +64,16 @@
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_stat_label.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/as_flextable.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/add_vif.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/as_flex_table.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/as_gt.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/as_huxtable.gtsummary.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/as_hux_table.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/as_kable.html</loc>
@@ -73,13 +94,16 @@
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/combine_terms.html</loc>
   </url>
   <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/custom_tidiers.html</loc>
+  </url>
+  <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/deprecated.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/gtsummary-package.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/dot-create_gtsummary_object.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/gtsummary_logo.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/gtsummary-package.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/inline_text.html</loc>
@@ -103,13 +127,22 @@
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/inline_text.tbl_uvregression.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/modify_footnote.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/modify.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/modify_header.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/modify_column_hide.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/modify_spanning_header.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/modify_fmt_fun.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/modify_table_body.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/modify_table_header.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/modify_table_styling.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/print_gtsummary.html</loc>
@@ -118,13 +151,19 @@
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/reexports.html</loc>
   </url>
   <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/remove_row_type.html</loc>
+  </url>
+  <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/select_helpers.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/set_gtsummary_theme.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/sort_p.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/sort_filter_p.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/style_number.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/style_percent.html</loc>
@@ -148,7 +187,13 @@
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/tbl_regression.html</loc>
   </url>
   <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/tbl_regression_methods.html</loc>
+  </url>
+  <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/tbl_stack.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/tbl_strata.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/tbl_summary.html</loc>
@@ -160,10 +205,13 @@
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/tbl_survival.html</loc>
   </url>
   <url>
-    <loc>http://www.danieldsjoberg.com/gtsummary//reference/tbl_survival.survfit.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/tbl_svysummary.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/tbl_uvregression.html</loc>
+  </url>
+  <url>
+    <loc>http://www.danieldsjoberg.com/gtsummary//reference/tests.html</loc>
   </url>
   <url>
     <loc>http://www.danieldsjoberg.com/gtsummary//reference/theme_gtsummary.html</loc>
