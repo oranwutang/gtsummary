@@ -1,3 +1,7 @@
 {"file":"bench-tbl_summary.R","name":"simple","time":"2021-03-02T19:28:21Z","os":"linux","mean":1.10139,"sd":0.0144325,"p0":1.08074,"p25":1.09001,"p50":1.09899,"p75":1.10924,"p100":1.13319,"n_itr":30,"n_gc":110,"total_time":33.0418,"mem_alloc":1.23989e+07}
 {"file":"bench-tbl_summary.R","name":"complex","time":"2021-03-02T19:28:21Z","os":"linux","mean":3.1072,"sd":0.0598998,"p0":3.0103,"p25":3.06695,"p50":3.09259,"p75":3.12533,"p100":3.27777,"n_itr":30,"n_gc":303,"total_time":93.216,"mem_alloc":1.07724e+07}
 {"file":"bench-tbl_summary.R","name":"big_data","time":"2021-03-02T19:28:21Z","os":"linux","mean":13.0412,"sd":0.144589,"p0":12.8249,"p25":12.9119,"p50":13.0229,"p75":13.1335,"p100":13.3695,"n_itr":30,"n_gc":748,"total_time":391.236,"mem_alloc":2.07452e+09}
+
+{"file":"bench-tbl_summary.R","name":"simple","time":"2021-03-03T18:46:31Z","os":"linux","mean":0.867762,"sd":0.00909183,"p0":0.856158,"p25":0.860791,"p50":0.867261,"p75":0.870395,"p100":0.895596,"n_itr":30,"n_gc":110,"total_time":26.0329,"mem_alloc":1.23988e+07}
+{"file":"bench-tbl_summary.R","name":"complex","time":"2021-03-03T18:46:31Z","os":"linux","mean":2.40702,"sd":0.0496652,"p0":2.36221,"p25":2.37633,"p50":2.39442,"p75":2.41209,"p100":2.55214,"n_itr":30,"n_gc":303,"total_time":72.2106,"mem_alloc":1.07724e+07}
+{"file":"bench-tbl_summary.R","name":"big_data","time":"2021-03-03T18:46:31Z","os":"linux","mean":10.8592,"sd":0.101423,"p0":10.7401,"p25":10.7688,"p50":10.8478,"p75":10.9086,"p100":11.0932,"n_itr":30,"n_gc":748,"total_time":325.776,"mem_alloc":2.07452e+09}
