@@ -23,10 +23,10 @@ jobs:
         run: |
           git config --local user.name "GitHub Actions"
           git config --local user.email "actions@github.com"
-      - name: Ensure base branch is fetched
-        run: |
-          git checkout -b \$GITHUB_HEAD_REF
-          git branch $GITHUB_BASE_REF remotes/origin/$GITHUB_BASE_REF
+# - name: Ensure base branch is fetched
+      #   run: |
+      #     git checkout -b $GITHUB_HEAD_REF
+      #     git branch $GITHUB_BASE_REF remotes/origin/$GITHUB_BASE_REF
       - name: Setup R
         uses: r-lib/actions/setup-r@master
       - name: Query dependencies
