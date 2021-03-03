@@ -54,7 +54,7 @@ jobs:
       - name: Install dependencies
         run: |
           # Rscript -e "install.packages(c('ggplot2', 'purrr', 'magrittr'))" -e "remotes::install_deps(dependencies = TRUE); remotes::install_github(c('r-lib/bench', 'lorenzwalthert/touchstone')); "
-          Rscript -e "install.packages(c('ggplot2', 'purrr', 'magrittr'), repos = c(CRAN = "https://cran.rstudio.com"))" -e "remotes::install_deps(dependencies = c("Depends", "Imports")); remotes::install_github(c('r-lib/bench', 'lorenzwalthert/touchstone')); "
+          Rscript -e "install.packages(c('ggplot2', 'purrr', 'magrittr'), repos = c(CRAN = 'https://cran.rstudio.com'))" -e "remotes::install_deps(dependencies = c('Depends', 'Imports')); remotes::install_github(c('r-lib/bench', 'lorenzwalthert/touchstone')); "
           # R CMD INSTALL .
       - name: Checkout benchmarking repo
         uses: actions/checkout@v2
