@@ -1,0 +1,1 @@
+{"file":"bench-tbl_summary.R","name":"simple","time":"2021-03-05T23:33:38Z","os":"macOS","mean":1.34645,"sd":0.08729,"p0":1.2507,"p25":1.28676,"p50":1.32,"p75":1.42146,"p100":1.45332,"n_itr":5,"n_gc":33,"total_time":6.73225,"mem_alloc":1.19369e+07}
