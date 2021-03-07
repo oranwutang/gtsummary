@@ -1,1 +1,3 @@
 {"file":"bench-tbl_summary.R","name":"simple","time":"2021-03-06T23:47:44Z","os":"macOS","mean":1.30475,"sd":0.100618,"p0":1.22966,"p25":1.23112,"p50":1.23907,"p75":1.3793,"p100":1.44462,"n_itr":5,"n_gc":33,"total_time":6.52377,"mem_alloc":1.19369e+07}
+
+{"file":"bench-tbl_summary.R","name":"simple","time":"2021-03-07T12:03:59Z","os":"macOS","mean":1.26727,"sd":0.0887564,"p0":1.19679,"p25":1.20778,"p50":1.20889,"p75":1.33101,"p100":1.3919,"n_itr":5,"n_gc":33,"total_time":6.33637,"mem_alloc":1.19369e+07}
