@@ -7,4 +7,9 @@ inst/doc
 docs/
 revdep/
 data-raw/~$gtsummary_translated.xlsx
+<<<<<<< HEAD
 NEWS.utf8.md
+=======
+renv.lock
+figure
+>>>>>>> useless
